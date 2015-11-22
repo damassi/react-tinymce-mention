@@ -345,7 +345,6 @@ function isFetching(keyMap, keyCode, store) {
   return shouldCancelEvent
 }
 
-// Export for test
 export const testExports = {
   _typedMention: typedMention,
   _focus: focus,

@@ -36,21 +36,22 @@ export class DefaultList {
 
     return (
       <div>
-        { matchedSources && matchedSources.length ?
-          <ul className='tinymce-mention__list' ref='mentionList'>
-            { matchedSources.map((match, index) => {
-              const { displayLabel } = match
+        { matchedSources && matchedSources.length
+          ? <ul className='tinymce-mention__list' ref='mentionList'>
+              { matchedSources.map((match, index) => {
+                const { displayLabel } = match
 
-              return (
-                <DefaultListItem
-                  ref={`listItem${index}`}
-                  displayLabel={displayLabel}
-                  index={index}
-                  key={`match-${index}`}
-                />
-              )
-            })}
-          </ul> : null
+                return (
+                  <DefaultListItem
+                    ref={`listItem${index}`}
+                    displayLabel={displayLabel}
+                    index={index}
+                    key={`match-${index}`}
+                  />
+                )
+              })}
+            </ul>
+          : null
         }
       </div>
     )

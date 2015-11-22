@@ -12,8 +12,6 @@ Works best with [react-tinymce](https://github.com/mzabriskie/react-tinymce/tree
 
 ![mentions](https://cloud.githubusercontent.com/assets/236943/9835207/4bd00be6-5993-11e5-8cdf-cf40a42f4498.gif)
 
-(NOTE: While this plugin is currently coupled with TinyMCE, extracting it from the current implementation should be fairly simple and we plan on releasing adaptors for other editors in the future.)
-
 ## Installation
 `npm install --save react-tinymce-mention`
 
